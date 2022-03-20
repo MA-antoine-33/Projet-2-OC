@@ -1,7 +1,8 @@
+/*Implementation of the desktop version for basic option*/
 #bloc_page {
     width: 992px;
     font-family: 'Raleway',serif;
-    margin: 25px;
+    margin: auto;
     font-size: 0.8em;
 }
 h1 {
@@ -18,4 +19,15 @@ h3 {
 }
 p {
     font-size: 0.9em;
+}
+
+/*Implementation of tablet version for device between 992px and 768px*/
+@media all and (max-width: 992px) and (min-width: 768px){
+    #bloc_page{
+        width: auto;
+        margin-left: 25px;
+    }
+    p{
+        font-size: 1em;
+    }
 }

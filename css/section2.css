@@ -1,4 +1,4 @@
-/*Réalisation de la section 2*/
+/*Implementation of the second section*/
 #section2 {
     margin-top: 40px;
 }
@@ -90,3 +90,19 @@
         #aside_s2 h3 {
             margin-left: 10px;
         }
+
+/*Implementation of tablet version for device between 992px and 768px*/
+@media all and (max-width: 992px) and (min-width: 768px){
+    .s2_bloc_i1 img {
+        height: 83%;
+    }
+    .s2_bloc_i2 #lien_act3 img {
+        height: 54%;
+    }
+    .s2_bloc_i2 #lien_act5 img {
+        height: 60%;
+    }
+    .s2_bloc_i2 #lien_act6 img {
+        height: 67%;
+    }
+}

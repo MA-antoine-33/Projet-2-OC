@@ -1,4 +1,4 @@
-/*Réalisation de l'article de la section 1*/
+/*Implementation of the article in the firt section*/
 #section1 {
     width: 100%;
     display: flex;
@@ -17,7 +17,7 @@
         margin-top: 0px;
         margin-bottom: 15px;
     }
-    #lien_article {
+    #liens_article {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -45,12 +45,12 @@
             margin-left: 5px;
             margin-bottom: 0px;
         }
-        #lien_article + p {
+        #liens_article + p {
             margin: 0px;
             font-weight: bold;
             font-size: 1em;
         }
-/*Réalisation de l 'aside de la section 1*/
+/*Implementation of the aside of the first section*/
 #section1 aside {
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -62,26 +62,27 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 15px;
     }
+        #titre_aside_s1 h2 {
+            margin: 0px;
+        }
         #titre_aside_s1 i {
             border-left: 2px solid black;
             border-bottom: 2px solid black;
         }
-    #lien_aside_s1 {
+    #liens_aside_s1 {
         width: 100%;
-        padding: 25px;
+        height: 400px;
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
     }
         .popu {
             width: 100%;
             height: 100px;  
-            margin-top: 5px;
-            margin-bottom: 25px;
-            margin-left: -5px;
             background-color: white;
             border-radius: 15px;
-            padding: 5px 5px 5px 5px;
             display: flex;
         }
             .popu img {
@@ -101,3 +102,60 @@
                     margin-top: 20px;
                     margin-bottom: 0px;
                 }
+
+/*Implementation of tablet version for device between 992px and 768px*/
+@media all and (max-width: 992px) and (min-width: 768px){
+    #section1 {
+        flex-direction: column-reverse;
+    }
+    #section1 p {
+        font-size: 1.1em;
+    }
+        #section1 aside {
+            width: 90%;
+            height: 250px;
+            margin-left: 0px;
+        }
+            #liens_aside_s1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                height: 100%;
+                width: 100%;
+            }
+            #liens_aside_s1 a {
+                width: 190px;
+                height: 180px;
+            }
+            .popu {
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                padding: 5px;
+            }
+                .popu img {
+                    width: 100%;
+                    height: 60%;
+                    object-fit: cover;
+                    border-radius: 15px 15px 0px 0px;
+                }
+                .popu .star2 {
+                    margin-top: 2px;
+                }
+                .popu img + div {
+                    padding: 2px 0px 0px 4px;
+                }
+        #section1 article {
+            width: 90%;
+            margin-top: 25px;
+        }
+        #liens_article {
+            justify-content: space-around;
+            max-width: 790px;
+            margin: auto;
+        }
+            .heb {
+                width: 190px;
+                height: 180px;
+            }
+}
