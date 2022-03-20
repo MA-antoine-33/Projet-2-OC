@@ -1,0 +1,122 @@
+/*Réalisation du bandeau contenant le logo et le menu*/
+#entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+    #entete img {
+        height: 30px;
+    }
+    #entete ul {
+        display: flex;
+        list-style: none;
+    }
+        #entete a {
+            color: black;
+            text-decoration: none;
+            padding: 20px;
+        }
+            #entete a:hover {
+                color: #0065FC;
+                border-top: 1px solid #0065FC;
+            }
+/*Réalisation du form et du paragraphe au dessus*/
+h1 + p {
+    margin-top: -5px;
+}
+/*Réalisation du formulaire*/
+#formulaire {
+    display: flex;
+}
+    #localisation {
+        background-color: #F2F2F2;
+        height: 35px;
+        width: 35px;
+        border-radius: 12px 0px 0px 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    #recherche {
+        border: 1px solid #F2F2F2;
+        font-size: 1.1em;
+        font-weight: bold;
+        width: 200px;
+    }
+    #submit {
+        background-color: #0065FC;
+        border: none;
+        border-radius: 0px 12px 12px 0px;
+        color: #F2F2F2;
+        width: 110px;
+        font-size: 1em;
+    }
+    #submitmobile {
+        display: none;
+    }
+/*Réalisation des filtres*/
+#filtre {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+    #filtre ul {
+        list-style: none;
+        display: flex;
+        margin-left: -30px;
+    }
+        #filtre a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            padding: 0px 12px 0px 0px;
+        }
+        #filtre li {
+            border: 1px solid #F2F2F2;
+            border-radius: 25px;
+            margin: 0px 15px 0px 15px;
+        }
+        #filtre i {
+            background-color: #DEEBFF;
+            color: #0065FC;
+            width: 43px;
+            height: 43px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+            margin-right: 5px;
+        }
+            #filtre a:hover {
+                background-color: #0065FC;
+                color: #F2F2F2;
+                border-radius: 25px;
+                font-size: 1.4em;
+            }
+            #filtre i:hover {
+                color: #F2F2F2;
+                background-color: #0065FC;
+            }
+        
+/*Réalisation de la dernière phrase du header*/
+#fin_entete {
+    display: flex;
+    align-items: center;
+}
+    #fin_entete i {
+        border: 3px solid #F2F2F2;
+        color: #0065FC;
+        border-radius: 15px;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
