@@ -1,0 +1,21 @@
+/*Réalisation du footer*/
+footer {
+    display: flex;
+    background-color: #F2F2F2;
+    width: 100%;
+    margin: 40px -25px 40px -25px;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+    footer a {
+        text-decoration: none;
+        color: black;
+    }
+    footer div {
+        margin-right: 170px;
+        margin-bottom: 25px;
+    }
+    footer p {
+        margin-top: -2px;
+    }
+    
