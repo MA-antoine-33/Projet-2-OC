@@ -1,4 +1,4 @@
-/*Réalisation du footer*/
+/*Implementation of the footer*/
 footer {
     display: flex;
     background-color: #F2F2F2;
@@ -19,3 +19,9 @@ footer {
         margin-top: -2px;
     }
     
+/*Implementation of tablet version for device between 992px and 768px*/
+@media all and (max-width: 992px) and (min-width: 768px) {
+    footer div {
+        margin-right: 100px;
+    }
+}
