@@ -106,3 +106,65 @@
         height: 67%;
     }
 }
+/*Implementation of device version for device smaller than 768px*/
+@media all and (max-device-width:768px){
+    #section2 {
+        width: 95%;
+        margin: auto;
+    }
+    #aside_s2 {
+        flex-direction: column;
+        height: auto;
+    }
+        .s2_bloc_i1 {
+            width: 100%;
+            height: 235px;
+            margin-bottom: 35px;
+        }
+        .s2_bloc_i2 {
+            width: 100%;
+            height: 540px;
+        }
+            .s2_bloc_i1 a {
+                border: 1px solid #F2F2F2;
+            }
+            .s2_bloc_i2 #lien_act2 {
+                width: 100%;
+                height: 235px;
+                margin-bottom: 35px;
+                border: 1px solid #F2F2F2;   
+            }
+            .s2_bloc_i2 #lien_act3 {
+                width: 100%;
+                height: 235px;
+                margin-bottom: 35px;
+                border: 1px solid #F2F2F2;   
+            }
+            .s2_bloc_i2 #lien_act5 {
+                width: 100%;
+                height: 235px;
+                margin-bottom: 35px;
+                border: 1px solid #F2F2F2;
+            }
+            .s2_bloc_i2 #lien_act6 {
+                width: 100%;
+                height: 235px;
+                margin-bottom: 35px;
+                border: 1px solid #F2F2F2;
+            }
+                .s2_bloc_i1 img {
+                    height: 68%;
+                }
+                .s2_bloc_i2 #lien_act2 img {
+                    height: 68%;
+                }
+                .s2_bloc_i2 #lien_act3 img {
+                    height: 68%;
+                }
+                .s2_bloc_i2 #lien_act5 img {
+                    height: 68%;
+                }
+                .s2_bloc_i2 #lien_act6 img {
+                    height: 68%;
+                }
+    }

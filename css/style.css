@@ -1,5 +1,5 @@
 /*Implementation of the desktop version for basic option*/
-#bloc_page {
+#main {
     width: 992px;
     font-family: 'Raleway',serif;
     margin: auto;
@@ -23,11 +23,30 @@ p {
 
 /*Implementation of tablet version for device between 992px and 768px*/
 @media all and (max-width: 992px) and (min-width: 768px){
-    #bloc_page{
+    #main{
         width: auto;
         margin-left: 25px;
     }
     p{
         font-size: 1em;
+    }
+}
+/*Implementation of device version for device smaller than 768px*/
+@media all and (max-device-width:768px) {
+    #main {
+        width: 480px;
+        margin: auto;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2.2em;
+    }
+    h3 {
+        font-size: 1.9em;
+    }
+    p {
+        font-size: 1.3em;
     }
 }
