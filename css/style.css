@@ -1,6 +1,7 @@
 /*Implementation of the desktop version for basic option*/
 #main {
-    width: 992px;
+    max-width: 992px;
+    width: auto;
     font-family: 'Raleway',serif;
     margin: auto;
     font-size: 0.8em;
@@ -20,6 +21,12 @@ h3 {
 p {
     font-size: 0.9em;
 }
+.star-blue {
+    color: #0065FC;
+}
+.star-grey {
+    color: #BBC3C4;
+}
 
 /*Implementation of tablet version for device between 992px and 768px*/
 @media all and (max-width: 992px) and (min-width: 768px){
@@ -34,19 +41,17 @@ p {
 /*Implementation of device version for device smaller than 768px*/
 @media all and (max-device-width:768px) {
     #main {
-        width: 480px;
-        margin: auto;
+        width: auto;
+        margin-left: 60px;
     }
     h1 {
-        font-size: 2.5em;
+        font-size: 4.5em;
     }
     h2 {
-        font-size: 2.2em;
+        font-size: 3.6em;
     }
     h3 {
-        font-size: 1.9em;
+        font-size: 3.1em;
     }
-    p {
-        font-size: 1.3em;
-    }
+ 
 }

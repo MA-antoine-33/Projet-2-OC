@@ -98,7 +98,6 @@ h1 + p {
                 background-color: #0065FC;
                 color: #F2F2F2;
                 border-radius: 25px;
-                font-size: 1.4em;
             }      
 /*Implementation of the last text of the header*/
 #fin_entete {
@@ -134,11 +133,11 @@ h1 + p {
 @media all and (max-device-width:768px) {
     #entete {
         flex-direction: column;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
         #entete img {
             margin: 25px;
-            height: 60px;
+            height: 70px;
         }
         nav {
             margin-left: -25px;
@@ -146,12 +145,11 @@ h1 + p {
             text-align: center;
         }
         nav li {
-            width: 53%;
             text-align: center;
-            font-size: 1.7em;
+            font-size: 2.6em;
         }
         #entete a {
-            padding: 0px 40.68px 10px 41px;
+            padding: 0px 98px 10px 98px;
             border-bottom: 3px solid #F2F2F2;
         }
         #entete ul {
@@ -162,16 +160,16 @@ h1 + p {
             border-bottom: 3px solid #0065FC;
         }
     #formulaire  {
-        margin-top: 25px;
+        margin-top: 60px;
     }
         #localisation {
-            width: 50px;
-            height: 50px;
-            font-size: 150%;
+            width: 100px;
+            height: 100px;
+            font-size: 250%;
         }
         #recherche {
-            width: 340px;
-            font-size: 1.7em;
+            width: 60%;
+            font-size: 3em;
             padding-left: 15px;
         }
         #submit {
@@ -181,46 +179,51 @@ h1 + p {
             display: initial;
             background-color: #0065FC;
             color: #F2F2F2;
-            width: 50px;
-            height: 50px;
+            width: 100px;
+            height: 100px;
             border-radius: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 150%;
+            font-size: 250%;
         }
     #filtre {
         flex-direction: column;
-        margin-top: 15px;
+        margin-top: 60px;
     }
         #filtre h2 {
-            margin-bottom: 0px;
+            margin-bottom: 15px;
         }
         #filtre ul {
             margin-top: 0px;
             padding-left: 10px;
         }
             #filtre a {
-                font-size: 1.8em;
+                font-size: 3em;
                 font-weight: bold;
-                padding: 0px 18px 0px 0px;
+                padding: 20px;
+                border-radius: 55px;
+                border: 5px solid #F2F2F2;
             }
             #filtre i {
-                width: 60px;
-                height: 60px;
-                border-radius: 30px;
+                width: 100px;
+                height: 100px;
+                margin: -20px 10px -20px -20px;
+                border-radius: 50px;
                 font-size: 110%;
             }
         #fin_entete {
             align-items: baseline;
+            margin-bottom: 40px;
         }
             #fin_entete i {
-            font-size: 1.4em;
-            width: 35px;
-            height: 25px;
-            border-radius: 25px;
+            font-size: 2.3em;
+            width: 70px;
+            height: 50px;
+            border-radius: 60px;
+            margin-right: 20px;
         }
         #fin_entete p {
-            font-size: 1.7em;
+            font-size: 3.2em;
         }
 }
