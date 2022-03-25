@@ -28,16 +28,17 @@ footer {
 /*Implementation of device version for device smaller than 768px*/
 @media all and (max-device-width:768px) {
     footer {
-        height: 670px;
+        height: 900px;
+        width: 95%;
         margin-bottom: 50px;
         flex-direction: column;
         padding-left: 50px;
         padding-top: 50px;
     }
         footer p {
-            font-size: 1.8em;
+            font-size: 2.5em;
         }
         footer h3 {
-            font-size: 2.1em;
+            font-size: 2.8em;
         }
 }
