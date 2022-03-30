@@ -9,7 +9,7 @@
 }
     .s2_bloc_i1, .s2_bloc_i2 {
         height: 100%;
-        width: 22%;
+        width: 25%;
         border-radius: 15px;
         display: flex;
         flex-direction: column;
@@ -92,7 +92,7 @@
         }
 
 /*Implementation of tablet version for device between 992px and 768px*/
-@media all and (max-width: 992px) and (min-width: 768px){
+@media all and (max-width: 991px) and (min-width: 768px){
     .s2_bloc_i1 img {
         height: 83%;
     }
@@ -107,53 +107,53 @@
     }
 }
 /*Implementation of device version for device smaller than 768px*/
-@media all and (max-device-width:768px){
+@media all and (max-width:767px){
     #section2 {
-        width: 90%;
-        margin-left: 20px;
-        margin-top: 50px;
+        width: 85%;
+        margin:auto;
+        margin-top: 10px;
     }
     #aside_s2 {
         flex-direction: column;
         height: auto;
     }
         #section2 h2 {
-            margin-bottom: 60px;
+            margin-bottom: 30px;
         }
         .s2_bloc_i1 {
             width: 100%;
-            height: 335px;
+            height: 200px;
             margin-bottom: 35px;
         }
         .s2_bloc_i2 {
             width: 100%;
-            height: 740px;
+            height: 450px;
         }
             .s2_bloc_i1 a {
                 border: 1px solid #F2F2F2;
             }
             .s2_bloc_i2 #lien_act2 {
                 width: 100%;
-                height: 335px;
-                margin-bottom: 35px;
+                height: 200px;
+                margin-bottom: 25px;
                 border: 1px solid #F2F2F2;   
             }
             .s2_bloc_i2 #lien_act3 {
                 width: 100%;
-                height: 335px;
-                margin-bottom: 35px;
+                height: 200px;
+                margin-bottom: 25px;
                 border: 1px solid #F2F2F2;   
             }
             .s2_bloc_i2 #lien_act5 {
                 width: 100%;
-                height: 335px;
-                margin-bottom: 35px;
+                height: 200px;
+                margin-bottom: 25px;
                 border: 1px solid #F2F2F2;
             }
             .s2_bloc_i2 #lien_act6 {
                 width: 100%;
-                height: 335px;
-                margin-bottom: 35px;
+                height: 200px;
+                margin-bottom: 25px;
                 border: 1px solid #F2F2F2;
             }
                 .s2_bloc_i1 img {

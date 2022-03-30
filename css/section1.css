@@ -10,7 +10,7 @@
 #section1 article {
     background-color: #F2F2F2;
     border-radius: 15px;
-    width: 60%;
+    width: 62%;
     padding: 25px;
 }
     #section1 h2 {
@@ -20,17 +20,20 @@
     #liens_article {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     #section1 a {
         color: black;
         text-decoration: none;
     }
+    article a {
+        width: 30%;
+    }
         .heb {
             background-color: white;
             border-radius: 20px;
             margin-bottom: 25px;
-            width: 175px;
+            width: 100%;
             height: 150px;
             padding: 5px;
         }
@@ -54,7 +57,7 @@
 #section1 aside {
     background-color: #F2F2F2;
     border-radius: 15px;
-    width: 23%;
+    width: 30%;
     padding: 25px 25px 0px 25px;
     margin-left: 25px;
 }
@@ -105,7 +108,7 @@
                 }
 
 /*Implementation of tablet version for device between 992px and 768px*/
-@media all and (max-width: 992px) and (min-width: 768px){
+@media all and (max-width: 991px) and (min-width: 768px){
     #section1 {
         flex-direction: column-reverse;
     }
@@ -125,7 +128,7 @@
                 width: 100%;
             }
             #liens_aside_s1 a {
-                width: 190px;
+                width: 30%;
                 height: 180px;
             }
             .popu {
@@ -152,86 +155,101 @@
         }
         #liens_article {
             justify-content: space-around;
-            max-width: 790px;
             margin: auto;
         }
+        #section1 a {
+            width: 30%;
+        }
             .heb {
-                width: 190px;
+                width: 100%;
                 height: 180px;
             }
 }
 /*Implementation of device version for device smaller than 768px*/
-@media all and (max-device-width:768px) {
+@media all and (max-width:767px) {
+    #section1 {
+        flex-direction: column-reverse;
+    }
     #section1 p {
-        font-size:2.1em;
+        font-size:1.2em;
     }
     #section1 aside {
         border-radius: 0px;
-        height: 900px;
-
+        height: auto;
+        width: 80%;
+        margin: auto;
+        padding-bottom: 25px;
     }
         #titre_aside_s1 {
-            margin-top: 50px;
-            margin-bottom: 50px;
+            margin-bottom: 25px;
         }
         #titre_aside_s1 i {
             border-left: 3px solid black;
             border-bottom: 3px solid black;
-            font-size: 220%;
+            font-size: 125%;
         }
         #liens_aside_s1 {
             flex-direction: column;
             justify-content: flex-start;
+            height: 100%;
         } 
         #liens_aside_s1 a {
-            width: 100%;
-            height: 200px;
-            margin-bottom: 20px;
-            margin-top: 15px;
+            margin-bottom: 10px;
+            margin-top: 0px;
         }
             .popu {
+                position: relative;
+                height: 150px;
+                padding: 4px;
                 flex-direction: row;
                 margin-left: -6px;
                 box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
             }
-            
                 .popu img {
                     width: 40%;
                     height: 100%;
                     border-radius: 15px 0px 0px 15px;
                 }
+                .popu img + div {
+                    padding: 20px;
+                }
                .popu h3, .popu p {
-                   margin: 10px 25px 5px 25px;
-
+                   margin: 0px 0px 5px 0px;
                }
                .popu .star2 {
-                    margin-top: 20px;
-                    margin-left: 20px;
-                    font-size: 175%;
+                    position: absolute;
+                    bottom: 10%;
+                    font-size: 100%;
+                    margin: 0px;
                }
     #section1 article {
         background-color: white;
-        margin-top: 50px;
+        margin-top: 15px;
+        width: 83%;
+        margin: auto;
     }
         #liens_article {
             flex-direction: column;
-            margin-top: 40px;
+            margin-top: 20px;
+        }
+        #section1 a {
+            width: 100%;
         }
             .heb {
                 width: 100%;
-                height: 335px;
+                height: 200px;
                 border: 2px solid #F2F2F2;
                 box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
                 padding: 5px;
             }
                 .star1 {
-                    font-size: 175%;
+                    font-size: 100%;
                 }
                 .heb .star1 {
                     margin-top: 8px;
                 }
         #liens_article + p {
-            font-size: 3em;
+            font-size: 1.5em;
             margin-top: 20px;
         }
 }
