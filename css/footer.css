@@ -12,6 +12,7 @@ footer {
         color: black;
     }
     footer div {
+        width: 30%;
         margin-right: 170px;
         margin-bottom: 25px;
     }
@@ -42,5 +43,8 @@ footer {
         }
         footer h3 {
             font-size: 1.6em;
+        }
+        footer div {
+            width: 100%;
         }
 }

@@ -1,10 +1,10 @@
 /*Implementation of the desktop version for basic option*/
 #main {
-    max-width: 992px;
     width: auto;
     font-family: 'Raleway',serif;
     margin: auto;
     font-size: 0.8em;
+    padding: 10px;
 }
 h1 {
     font-size: 1.4em;
